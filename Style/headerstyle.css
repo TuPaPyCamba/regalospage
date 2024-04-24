@@ -8,7 +8,7 @@
 
 body {
     font-family: sans-serif;
-    background-color: black;
+    background-color: #EAE4DF;
 }
 
 header {
@@ -50,8 +50,10 @@ header {
     margin-left: 10px;
     padding: 10px 14px;
     border-radius: 5px;
+    color: black;
     cursor: pointer;
-    transition: bacground-color 0.3s, color 0.3s;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .enlaces-container a:hover {
