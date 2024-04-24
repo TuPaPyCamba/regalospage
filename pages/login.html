@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar Sesión </title>
     <link rel="icon" href="/public/icon.svg">
     <link rel="stylesheet" href="/Style/headerstyle.css">
+    <link rel="stylesheet" href="/Style/FormLogStyle.css">
 </head>
+
 <body>
     <header>
         <div class="menu-container">
@@ -22,7 +25,53 @@
         </div>
     </header>
     <section>
-        
+        <div class="container">
+            <div class="form-container">
+                <h1>Inicio de Sesión</h1>
+                <form action="" class="formulario" id="formulario">
+                    <div class="formulario-grupo" id="grupo-usuario">
+                        <label for="usuario" class="formulario-label">Usuario</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="Usuario" id="Usuario"
+                                placeholder="Ingrese su Nombre de Usuario">
+                            <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                        </div>
+                        <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 digitos</p>
+                    </div>
+                    <div class="formulario-grupo" id="grupo-password">
+                        <label for="password" class="formulario-label">Contraseña</label>
+                        <div class="formulario__grupo-input">
+                            <input type="password" class="formulario__input" name="password" id="password"
+                                placeholder="Ingrese su Contraseña">
+                            <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                        </div>
+                        <p class="formulario__input-error">La contraseña debe tener minimo 5 digitos</p>
+                    </div>
+                    <div class="formulario-grupo" id="grupo-password2">
+                        <label for="password2" class="formulario-label">Confirmar Contraseña</label>
+                        <div class="formulario__grupo-input">
+                            <input type="password" class="formulario__input" name="password2" id="password2"
+                                placeholder="Confirme su Contraseña">
+                            <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                        </div>
+                        <p class="formulario__input-error">Las contraseñas no coinciden</p>
+                    </div>
+                    <div class="formulario__mensaje" id="formulario__mensaje">
+                        <p><i class="fa-solid fa-triangle-exclamation"></i><b>Error: </b> Por favor rellena el
+                            formulario correctamente.</p>
+                    </div>
+                    <div class="formulario-grupo formulario-grupo-btn-enviar">
+                        <button type="submit" class="formulario__btn">Enviar</button>
+                        <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente</p>
+                    </div>
+                </form>
+            </div>
+            <div class="img-container">
+                <img src="" alt="">
+            </div>
+        </div>
     </section>
+    <script src="https://kit.fontawesome.com/8399832daf.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
