@@ -7,8 +7,10 @@
 }
 
 body {
+    background-image: url(/public/body.jpg);
+    background-size: cover;
+    background-position: center;
     font-family: sans-serif;
-    background-color: #EAE4DF;
 }
 
 header {
@@ -19,7 +21,7 @@ header {
 }
 
 .menu-container{
-    max-width: 1200px;
+    max-width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
