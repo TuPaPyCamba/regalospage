@@ -14,12 +14,6 @@ const validarFormulario = (e) => {
         case "usuario":
             cons
         break;
-        case "password":
-            cons
-        break;
-        case "password2":
-            cons
-        break;
     } 
 }
 
@@ -31,4 +25,3 @@ inputs.forEach(()=>{
 formulario.addEventListener('submit', (e)=>{
     e.preventDefault()
 })
-
