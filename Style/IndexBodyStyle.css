@@ -94,3 +94,39 @@ section {
 .form-container {
     background-color: aqua;
 }
+
+.general {
+    padding: 30px;
+    flex-direction: column;
+}
+
+.general h1 {
+    font-weight: 400;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.line {
+    background-color: black;
+    height: 5px;
+    width: 100%;
+    display: block;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+    max-width: 100%;
+    width: 100%;
+    margin: auto;
+    grid-gap: 10px;
+    padding: 40px 0;
+    overflow: hidden;
+}
+
+.galeria img {
+    width: 100%;
+    vertical-align: top;
+    height: 300px;
+    object-fit: cover;
+}
